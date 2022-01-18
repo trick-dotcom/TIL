@@ -1,0 +1,22 @@
+-레포지토리 만들기
+1. 레포지토리 생성 시 README파일 추가
+2. open preview to side 버튼 누르면 보면서 작성 가능
+
+-git clone 하기
+1. F1>git clone 검색
+2. select repository
+3. local PC 저장 위치 선택 
+4. clone 완료(open 누르면 됨)
+
+-터미널 사용(git commit&push)
+1. open terminal
+2. git add.
+3. git commit -m "markdown"
+4. git push 원격저장소명 브랜치명
+<GUI 사용>
+1. source control click(왼쪽 다섯개의 아이콘 중 세번째 동그라미 세개있는 아이콘)
+2. + 눌러서 스테이지하기
+3. 체크 표시 눌러서 commit
+4. ... 눌러서 push click
+
+-->GUI는 쉬운데 아직 타자로 하는 건 못 함.
