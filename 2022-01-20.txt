@@ -1,0 +1,17 @@
+<챌린지 제출/복습>
+1. 챌린지 하던 중 알게 된 내용
+-linear-gradient -> ppt에서 그라데이션 느낌스~
+-->css에서는
+ex)
+body{
+    linear-gradient(to right, red, blue);
+}
+-->js에서
+ex)body.style.background = `linear-gradient(to right, red, pink)`;
+
+2. 강의/복습 중 익숙치 않아 헷갈렸던 내용
+appendChild하는 구조 
+->챌린지 혹은 따로 연습을 통해서 적응하면 늘 그랬던 것처럼 잘하게 되지 않을까..
+
+
+
