@@ -31,3 +31,20 @@ Value값이 ["a","b","c"]로 나옴->배열로 저장
 이 경우 역시 새로고침하고 값을 다시 넣으면 기존의 값은 사라지고 새로운 값으로만 저장.
 
 ------> ["a","b"]==>"["a","b"]"
+문자들을 문자열로 정리
+
+3.JSON.parse
+-->문자열을 array형식으로 저장
+
+!!!!!!!!!!!헷갈린다
+JSON.parse, JSON.stringify
+
+4. forEach
+-->각 onject마다 functino실행
+
+ex)
+1)
+fuction sayHello(){}
+parsedToDos.forEach(sayHello);
+2)
+parsedToDos.forEach(item) => console.log("this is the turn of ",item)  : arrow function이라고 부름
