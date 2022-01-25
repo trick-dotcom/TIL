@@ -27,7 +27,7 @@ By geographic coordinates 에 나와있는 api call 링크 복사
 위도 경도 api 값 대입하면 내 위치의 날씨와 관련된 다양한 정보
 확인 가능
 
-
+ 
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
 -->현재 위치를 찾게 해주는 함수인데 괄호 안에는 정상일때의 실행시킬 함수
