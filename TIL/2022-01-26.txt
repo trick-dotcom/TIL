@@ -29,3 +29,69 @@ function handleToDoSubmit(event){
 }
 
 4.
+    1) submit하고 paintToDo함수 실행
+function handleToDoSubmit(event){
+    event.preventDefault();
+    const newToDo = toDoInput.value;
+    toDoInput.value = "";
+    paintToDo(newToDo);
+}
+    2) message = paintToDo괄호 안에 있는 newToDo
+        toDoList안에 넣을 수 있는 li와 span생성후 
+        li안에 span을 넣음
+         --><span><li></li></span>
+function paintToDo(message){
+    const li = document.createElement("li");
+    const span = document.createElement("span");
+    li.appendChild(span);
+    span.innerText = message;
+    toDoList.appendChild(li);
+}
+
+5.
+    1) btn도 생성 후 li에 포함시키고 btn을 클릭하면 
+        deleteToDo함수 실행시키기
+function paintToDo(message){
+    const li = document.createElement("li");
+    const span = document.createElement("span");
+    const btn = document.createElement("button");
+    btn.innerText = "x";
+    li.appendChild(span);
+    li.appendChild(btn);
+    span.innerText = message;
+    toDoList.appendChild(li);
+    btn.addEventListener("click", deleteToDo);
+}
+
+    2)클릭되었을 때의 target = btn이고 btn의 부모는 li이다
+        이 클릭된li를 del이라고 변수 설정하고 btn의 x를 
+        누르면 del을 삭제 시켜주고 인터페이스의 투두리스트 
+        하나가 삭제된다.
+function deleteToDo(event){
+    const del = (event.target.parentElement);
+    del.remove();
+}
+
+6. localStorage에는 array를 저장할 수 없기때문에 텍스트로 바꿔야함
+[]가 포함된 배열로 저장하기 위해서는 JSON.stringify를 사용해서
+"["a","b","c"]"형태로 바꾸고 후에 JSON.parse를 통해서
+["a","b","c"]로 전환하면 된다.
+
+    1)"todos"를 텍스트형식으로 바꾸기(JSON.stringify())
+function saveToDos(){
+    localStorage.setItem("todos", JSON.stringify(toDos));
+}
+
+    2)저장되어있는 "todos"를 불러와서 savedToDos에 저장
+    새로고침시 나오는 화면에 적용하려고
+const savedToDos = localStorage.getItem("todos");
+
+
+    3)
+if(savedToDos !== null){  --->저장되어 있더라면
+    const parsedToDos = JSON.parse(savedToDos);  -->JSON.parse를 통해서 array형태로 변환
+    toDos=parsedToDos;  ---->새로고침하면 toDos=[]이기 때문에 toDos를 let으로 설정하고 parsedToDos를 대입
+    parsedToDos.forEach(paintToDo);  parsedToDos의 각각의 item마다 paintToDo 함수를 진행
+}
+
+7.
