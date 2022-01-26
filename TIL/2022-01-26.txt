@@ -1,0 +1,31 @@
+<투두리스트 다시 복습>
+--만드는 과정
+
+1.  html에 todo입력 받을 form 입력
+2.  입력받은 todo를 나타낼 ul입력
+    js에서 li를 생성한 후 추가할거라 더이상의 추가 입력 x
+
+3.    
+    1) js에서 사용할 것들 html에서 grab하기
+const toDoForm = document.getElementById("todo-form");
+const toDoInput = toDoForm.querySelector("input");
+const toDoList = document.getElementById("todo-list");
+
+    2) 입력받고 submit을 하면 handleToDoSubmit함수 실행
+toDoForm.addEventListener("submit", handleToDoSubmit); 
+    
+    3) - event.preventDefault()로 submit을 해도 화면 
+         넘어가지 않게 설정
+       - 새로운 변수 newToDo에 입력받은 값 저장.
+       - 입력받은 값을 ""로 저장해 submit후 입력받는 칸이
+       비어있게 설정
+       - 콘솔로그로 비포/애프터 확인 
+function handleToDoSubmit(event){
+    event.preventDefault();
+    const newToDo = toDoInput.value;
+    console.log(toDoInput.value);
+    toDoInput.value = "";
+    console.log(newToDo, toDoInput.value);
+}
+
+4.
