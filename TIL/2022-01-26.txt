@@ -94,4 +94,46 @@ if(savedToDos !== null){  --->저장되어 있더라면
     parsedToDos.forEach(paintToDo);  parsedToDos의 각각의 item마다 paintToDo 함수를 진행
 }
 
-7.
+7. 배열에서 내가 원하는 것만 빼고 삭제할때는 없애는 것이 아니라 내가 
+선택한 것들을 뺀 배열을 새로 만드는 것이다
+
+function sextfilter(item){
+     return item!=3
+}
+--->참이면 그대로 나오고 거짓이면 안나옴 (필터됨 걸러짐)
+[1,2,3,4].filter(sexyfilter);     or arr.filter(item =>item>2)
+
+
+function handleToDoSubmit(event){
+    event.preventDefault();
+    const newToDo = toDoInput.value;
+    toDoInput.value = "";
+    const newToDoObj = {  -------->text와 id가 담긴 배열을 생성하고 이 배열을 밑의 두 함수에 대입한다.
+        text : newToDo,
+        id :Date.now(),   --->date.now()로 id를 얻음.
+    }
+    toDos.push(newToDoObj);
+    paintToDo(newToDoObj);
+    saveToDos();
+}
+
+function paintToDo(message){-->message는 newToDoobj ==>text,id,가 모두 담겨있음
+    const li = document.createElement("li");  -->새로 생성한 li
+    li.id = message.id;  	                    --->그 li의 id = message의 id 
+    const span = document.createElement("span");
+    const btn = document.createElement("button");
+    btn.innerText = "x";
+    li.appendChild(span);
+    li.appendChild(btn);
+    span.innerText = message.text;
+    toDoList.appendChild(li);
+    btn.addEventListener("click", deleteToDo);
+}
+
+function deleteToDo(event){ -->클릭시 실행되는 함수
+    const del = (event.target.parentElement);   -->del설정
+    del.remove();   			          -->del삭제(화면에서)
+    toDos = toDos.filter(toDo => toDo.id !==parseInt(del.id)); -->storage에서 지우기 filter사용
+    saveToDos();   새로 필터링된 toDos를 다시 string으로 바꾸기 위해 savedToDos함수 실행
+}
+
