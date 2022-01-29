@@ -1,0 +1,41 @@
+<CSS 100DAYS CHALLENGE>
+어려웠다. 이제 이틀차인데.. 갈 길이 멀다 열심히 하자
+오늘 js도 js지만 대부분이 애니메이션에대한 고민이었는데
+이것저것 찾아보고 다른 사람들의 코드도 보면서 유용한 팁?
+같은 것을 얻은 것 같다. 나는 전혀 생각도 못했는데 뭔가 나중에 
+유용하게 쓸 것 같았다. 기억에 잘 남으라고 여기에다가 코드를
+복붙해놔야겠다.
+
+<html>
+<div class="center">
+              <div class ="first stick"></div>
+              <div class ="second stick"></div>
+              <div class ="third stick"></div>
+        </div>
+----------------------------------------------------
+<CSS>
+
+.center.active .first{
+	animation: movefirst 1s ease-in-out forwards;
+	}
+.center.active .second{
+	animation: movesecond  1s ease-in-out forwards;
+}
+.center.active .third{
+	animation:movethird 1s ease-in-out forwards;
+}
+
+------------------------------------
+
+html에서 center안에 세개의 상자를 만들어 주었다.
+이 상자들에 애니메이션을 적용하기 위해서 css에서 위와 같이
+.center.active .first 라고 적어주었다.
+이 방법은 부모상자에 active를 추가해서 다음에 오는 자식상자
+모두에 영향을 주기 위함인데 이게 뭐 대단하거냐고 생각할 수 
+있지만 단편적으로 .active input과 같이 하나씩만 사용하는
+경우만 보던 나에겐 이거다 싶은 아이디어였고 꽤 유용한 정보였다.
+
+
+노마드센세 수업인 코코아클론 이후에 애니메이션을 사용한 적이 
+거의 없어 가물가물했는데 다시 찾아보면서 공부하니 기억도 나고
+더 배우는 시간이었다. 확실히 챌린지를 하길 잘했다.
