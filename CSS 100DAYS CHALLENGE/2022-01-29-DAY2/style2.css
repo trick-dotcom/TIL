@@ -1,0 +1,135 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color:#3faf82;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	justify-content:center;
+}
+.stick{
+	background-color:white;
+	width:100px;
+	height:10px;
+	margin:15px 0px;
+	border-radius:10px;
+	box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+}
+.stick:hover{
+	cursor:pointer;
+}
+.hidden{
+	display:none;
+}
+
+@keyframes movesecond{
+	from{
+		opacity:1;
+		transform:scale(1);
+	}
+	to{
+		opacity:0;
+		transform:scale(0);
+	}
+}
+@keyframes movefirst{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translate(0%,250%)
+	}
+	100%{
+transform: translate(0%,250%)
+	rotate(45deg);
+	}
+}
+@keyframes movethird{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translate(0%,-250%)
+	}
+	100%{
+transform: translate(0%,-250%)
+	rotate(-45deg);
+}
+}
+.center.active .first{
+	animation: movefirst 1s ease-in-out forwards;
+	}
+.center.active .second{
+	animation: movesecond  1s ease-in-out forwards;
+}
+.center.active .third{
+	animation:movethird 1s ease-in-out forwards;
+}
+
+ 
+@keyframes backsecond{
+	from{
+		opacity:0;
+		transform:scale(0);
+	}
+	to{
+		opacity:1;
+		transform:scale(1);
+	}
+}
+@keyframes backfirst{
+	0%{
+	transform: translate(0%,250%) 
+	rotate(45deg); 
+	}
+	50%{
+		transform: translate(0%,250%);
+	}
+	100%{
+transform:translate(0);
+	}
+}
+
+@keyframes backthird{
+	0%{
+		transform: translate(0%,-250%)
+	rotate(-45deg);
+	}
+	50%{
+		transform: translate(0%,-250%);
+	}
+	100%{
+transform: translate(0);
+    }
+}
+
+
+.center.back .first{
+	animation: backfirst 1s ease-in-out forwards;
+	}
+.center.back .second{
+	animation: backsecond  1s ease-in-out forwards;
+}
+.center.back .third{
+	animation:backthird 1s ease-in-out forwards;
+}
