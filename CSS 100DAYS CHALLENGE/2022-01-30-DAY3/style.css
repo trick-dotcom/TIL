@@ -1,0 +1,200 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color:#272c34;
+	border-radius:10px;
+}
+
+.center {
+  position: absolute;
+	width:180px;
+	height:180px;
+	border-radius:90px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	overflow:hidden;
+	background-color:#272C34;
+	animation:sunset 5s cubic-bezier(.3,.73,.97,.23) infinite;
+}
+.sun{
+	position:absolute;
+	left:90px;
+	top:10px;
+	width:36px;
+	height:36px;
+	border-radius:18px;
+	background-color:yellow;
+	animation: sunmove 5s cubic-bezier(.3,.73,.97,.23) infinite;
+}
+@keyframes sunmove{
+	0%{
+		transform:rotate(-90deg) translate(-200px,-120px);
+	}
+	100%{
+		transform:rotate(50deg) translate(200px,120px);
+	}
+}
+.pyramid-1{
+	position:absolute;
+	bottom:29px;
+	left:25px;
+	background-color:white;
+	width:120px;
+	height:130px;
+	clip-path: polygon(10% 80%,53% 36%,72% 81%);
+	animation:p1-shadow 5s cubic-bezier(.3,.73,.97,.23) infinite;
+}
+.pyramid-2{
+	position:absolute;
+	bottom:29px;
+	right:27px;
+	width: 100px;
+  height: 133px;
+	background-color:white;
+	clip-path: polygon(57% 81%,34% 37%,97% 80%);
+	animation:p2-shadow 5s cubic-bezier(.3,.73,.97,.23) infinite;
+}
+.land{
+	position:absolute;
+	bottom:-5px;
+	width:200px;
+	height:60px;
+	background-color:#f0de75;
+	animation:land-night 5s cubic-bezier(.3,.73,.97,.23) infinite;
+}
+@keyframes land-night{
+	0%{
+	background-color:#f0de75;
+	}
+	92%{
+	background-color:#f0de75;
+	}
+	95%{
+    background-color: #272C34;
+	}
+  100% {
+    background-color: #272C34;
+  }
+}
+.l-shadow{
+	width:110px;
+	height:20px;
+	position:absolute;
+	bottom:-1px;
+	right:-12px;
+	background-color:#c0b25e;
+	animation:la-shadow 5s linear infinite;
+}
+@keyframes p1-shadow{
+	0%{
+		background-color:white;
+	}
+	50%{
+		background-color:white;
+	}
+	80%{
+		background-color:#e1dede;
+	}
+	92%{
+		background-color:#d1d2d3;
+	}
+	95%{
+    background-color: #272C34;
+	}
+  100% {
+    background-color: #272C34;
+  }
+}
+@keyframes p2-shadow{
+	0%{
+		background-color:white;
+	}
+	50%{
+		background-color:#d1d2d3;
+	}
+	90%{
+		background-color:white;
+	}
+	92%{
+		background-color:white;
+	}
+	
+	95%{
+    background-color: #272C34;
+	}
+  100% {
+    background-color: #272C34;
+  }
+}
+
+@keyframes la-shadow{
+	0%{
+		width:178px;
+		height:100px;
+		clip-path: polygon(100% 74%,10% 44%,77% 43%);
+	}
+	50%{
+		width:178px;
+		height:100px;
+		clip-path: polygon(48% 60%,10% 44%,74% 43%);
+	}
+	92%{
+		width:178px;
+		height:100px;
+		clip-path: polygon(0% 74%,12% 44%,80% 43%);
+		background-color:#c0b25e;
+	}
+	96%{
+		width:178px;
+		height:100px;
+		clip-path: polygon(0% 74%,12% 44%,80% 43%);
+	 background: #272C34;
+	}
+	100%{
+		width:178px;
+		height:100px;
+		clip-path: polygon(0% 74%,12% 44%,80% 43%);
+	 background: #272C34;
+	}
+	
+}
+@keyframes sunset{
+	  0% {
+    background: #272C34;
+  }
+	20%{
+		background: #7DDFFC;	
+	}
+	30% {
+		background: #7DDFFC;
+	}
+	70% {
+		background: #7DDFFC;
+	}
+	90%{
+		background: #7DDFFC;
+	}
+	95%{
+		background: #272C34;
+	}
+  100% {
+    background: #272C34;
+  }
+}
