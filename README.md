@@ -1,5 +1,5 @@
 # 하루 끝!
-[👍TIL](https://github.com/trick-dotcom/TIL/tree/main/TIL)
+[👍TIL](https://github.com/trick-dotcom/TIL/tree/main/TIL(TEXT))
 #
 [👍CSS-100DAYS-CHALLENGE](https://github.com/trick-dotcom/TIL/tree/main/CSS%20100DAYS%20CHALLENGE)
 #
