@@ -1,0 +1,141 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+@import url(https://use.fontawesome.com/releases/v5.15.4/css/all.css);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 8px rgba(0,0,0,0.3);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color:#263f57;
+	border-radius:8px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	width:300px;
+	height:300px;
+	background-color:white;
+	border-radius:5px;
+	box-shadow:2px 2px 10px rgba(0,0,0,0.8);
+}
+.notification{
+	width:300px;
+	height:60px;
+	background-color:#5f98cc;
+	border-radius:5px 5px 0px 0px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	color:white;
+	font-weight:600;
+	font-size:15px;
+}
+.noti-left{
+	width:34px;
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+	margin-left:20px;
+	cursor:pointer;
+}
+.up-bar{
+	width:25px;
+	height:4px;
+	background-color:#b2dafe;
+	margin-right:2px;
+	border-radius:5px;
+}
+.up-cir{
+	width:6px;
+	height:6px;
+	background-color:#b2dafe;
+	border-radius:3px;
+}
+.down-bar{
+	margin-top:8px;
+	width:34px;
+	height:4px;
+	background-color:#b2dafe;
+	border-radius:3px;
+}
+i{
+	color:#b2dafe;
+	margin-right:20px;
+	cursor:pointer;
+}
+.bar-ver{
+	height:240px;
+	width:3px;
+	background-color:#ebebeb;
+	position:absolute;
+	left:30px;
+}
+.var-cir{
+	width:12px;
+	height:12px;
+	border-radius:50%;
+	background-color:#81aed7;
+	border:3px solid white;
+	position:absolute;
+	left:22.5px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.one{
+	top:90px;
+}
+.two{
+	top:160px;
+}
+.three{
+	top:230px;
+}
+.in-circle{
+	width:7px;
+	height:7px;
+	border-radius:50%;
+	background-color:white;
+	
+}
+ul{
+	list-style:none;
+	position:absolute;
+	left:5px;
+	font-size:14px;
+	color:#717171;
+	.tl-time{
+		font-size:10px;
+		margin-bottom:3px;
+	}
+	&:hover{
+		color:#81aed7;
+		cursor:pointer;
+	}
+}
+.tl-one{
+	position:abslute;
+	top:79px;
+}
+.tl-two{
+	top:148px;
+}
+.tl-three{
+	top:218px;
+}
+
