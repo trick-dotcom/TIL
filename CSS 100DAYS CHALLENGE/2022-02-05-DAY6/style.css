@@ -35,15 +35,15 @@
 	position:absolute;
 	top:30px;
 	left:62px;
-	&:hover{
-		cursor:pointer;
-		.circle-in{
-			transform:rotate(360deg);
-		}
-		.circle-out{
-			transform:rotate(-360deg);
-		}
-	}
+}
+.profile-pic:hover{
+	cursor:pointer;
+}
+.profile-pic:hover .circle-in{
+	transform:rotate(360deg);
+}
+.profile-pic:hover .circle-out{
+	transform:rotate(-360deg);
 }
 .circle-in{
 	width:76px;
@@ -95,11 +95,11 @@ img{
 	position:absolute;
 	bottom:80px;
 	left:40px;
-	&:hover{
-		background-color:#0655c2;
-		color:white;
-		transition: 0.5s ease-in-out;
-	}
+}
+.btn *:hover{
+	background-color:#0655c2;
+	color:white;
+	transition: 0.5s ease-in-out;
 }
 .btn-message{
 	position:absolute;
@@ -130,10 +130,10 @@ img{
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
-	&:hover{
-		filter:brightness(90%);
-		transition:all 1s ease-in-out;
-	}
+}
+.number div:hover{
+	filter:brightness(90%);
+	transition:all 1s ease-in-out;
 }
 .num-posts{
 	border-radius:0 5px 0 0;
