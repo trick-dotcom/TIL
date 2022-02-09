@@ -117,14 +117,14 @@ ul{
 	left:5px;
 	font-size:14px;
 	color:#717171;
-	.tl-time{
-		font-size:10px;
-		margin-bottom:3px;
-	}
-	&:hover{
-		color:#81aed7;
-		cursor:pointer;
-	}
+}
+ul .tl-time{
+	font-size:10px;
+	margin-bottom:3px;
+}
+ul:hover{
+	color:#81aed7;
+	cursor:pointer;
 }
 .tl-one{
 	position:abslute;
@@ -181,12 +181,13 @@ transform:translateX(20px);
 	width:150px;
 	height:50px;
 	transition:0.8s ease-in-out;
-	&:hover{
-		color:white;
-		background:#263f57;
-	}
+	
 	display:flex;
 	align-items:center;
+}
+.menu up li:hover{
+	color:white;
+	background:#263f57;
 }
 .menu ul li span{
 	margin:0 10px;
