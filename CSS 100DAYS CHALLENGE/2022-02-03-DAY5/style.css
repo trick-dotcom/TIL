@@ -130,170 +130,171 @@
 	position:absolute;
 	top:50px;
 	left:10px;
-	svg{
-		fill:none;
-		stroke:var(--red);
-		stroke-width:2;
-	}
-	.tooltip{
-		visibility:hidden;
-		background-color:var(--red);			
-		position:absolute;
-		top:-24px;
-		left:-8px;
-		width:24px;
-		height:18px;
-		font-size:9px;
-		font-weight:600;
-		display:flex;
-		justify-content:center;
-		align-items:center;
-		color:white;
-		border-radius:2px;
-		.toe{
-			position:absolute;
-			top:15px;
+}
+.red-chart 	svg{
+	fill:none;
+	stroke:var(--red);
+	stroke-width:2;
+}
+.red-chart .tooltip{
+	visibility:hidden;
+	background-color:var(--red);			
+	position:absolute;
+	top:-24px;
+	left:-8px;
+	width:24px;
+	height:18px;
+	font-size:9px;
+	font-weight:600;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:white;
+	border-radius:2px;
+}
+.red-chart .toe{
+	position:absolute;
+	top:15px;
+	width:8px;
+	height:8px;
+	background-color:var(--red);
+	clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+
+.red-chart	.dot{
 			width:8px;
 			height:8px;
+			border-radius:4px;
 			background-color:var(--red);
-			clip-path: polygon(50% 100%, 0 0, 100% 0);
-		}
+			}
+			.mouseon{
+		cursor:pointer;
+		z-index:1;
 	}
-	.points{
-		.dot{
-				width:8px;
-				height:8px;
-				border-radius:4px;
-				background-color:var(--red);
-				}
-		.mouseon{
-			cursor:pointer;
-			z-index:1;
-		}
-		.mouseon:hover .tooltip{
-			visibility:visible;
-		}
-		.point-1{
-			position:absolute;
-			top:40px;
-			left:8px;
-		}
-		.point-2{
-			position:absolute;
-			top:9px;
-			left:47px;	
-		}
-		.point-3{
-			position:absolute;
-			top:19px;
-			left:88px;
-		}
-		.point-4{
-			position:absolute;
-			top:8px;
-			left:125px;
-		}
-		.point-5{
-			position:absolute;
-			top:35px;
-			left:170px;
-		}
-		.point-6{
-			position:absolute;
-			top:43px;
-			left:208px;
-		}
-		.point-7{
-			position:absolute;
-			top:18px;
-			left:246px;
-		}
+	.mouseon:hover .tooltip{
+		visibility:visible;
 	}
-}
+	.red-chart .point-1{
+		position:absolute;
+		top:40px;
+		left:8px;
+	}
+	.red-chart .point-2{
+		position:absolute;
+		top:9px;
+		left:47px;	
+	}
+	.red-chart .point-3{
+		position:absolute;
+		top:19px;
+		left:88px;
+	}
+	.red-chart .point-4{
+		position:absolute;
+		top:8px;
+		left:125px;
+	}
+	.red-chart .point-5{
+		position:absolute;
+		top:35px;
+		left:170px;
+	}
+	.red-chart .point-6{
+		position:absolute;
+		top:43px;
+		left:208px;
+	}
+	.red-chart .point-7{
+		position:absolute;
+		top:18px;
+		left:246px;
+	}
+
 .blue-chart{
 	position:absolute;
 	top:50px;
 	left:10px;
-	svg{
-		fill:none;
-		stroke:var(--blue);
-		stroke-width:2;
+}
+.blue-chart svg{
+	fill:none;
+	stroke:var(--blue);
+	stroke-width:2;
+}
+.blue-chart .tooltip{
+	visibility:hidden;
+	background-color:var(--blue);			position:absolute;
+	top:-24px;
+	left:-8px;
+	width:24px;
+	height:18px;
+	font-size:9px;
+	font-weight:600;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:white;
+	border-radius:2px;
+}
+.blue-chart .toe{
+	position:absolute;
+	top:15px;
+	width:8px;
+	height:8px;
+	background-color:var(--blue);
+	clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+ .mouseon{
+		cursor:pointer;
+		z-index:1;
 	}
-	.tooltip{
-		visibility:hidden;
-		background-color:var(--blue);			position:absolute;
-		top:-24px;
-		left:-8px;
-		width:24px;
-		height:18px;
-		font-size:9px;
-		font-weight:600;
-		display:flex;
-		justify-content:center;
-		align-items:center;
-		color:white;
-		border-radius:2px;
-		.toe{
-			position:absolute;
-			top:15px;
+	.mouseon:hover .tooltip{
+		visibility:visible;
+	}
+
+.blue-chart .dot{
 			width:8px;
 			height:8px;
+			border-radius:4px;
 			background-color:var(--blue);
-			clip-path: polygon(50% 100%, 0 0, 100% 0);
-		}
+			}
+			.blue-chart	.point-1{
+		position:absolute;
+		top:57px;
+		left:8px;
 	}
-	
-		.mouseon{
-			cursor:pointer;
-			z-index:1;
-		}
-		.mouseon:hover .tooltip{
-			visibility:visible;
-		}
-	.points{
-		.dot{
-				width:8px;
-				height:8px;
-				border-radius:4px;
-				background-color:var(--blue);
-				}
-		.point-1{
-			position:absolute;
-			top:57px;
-			left:8px;
-		}
-		.point-2{
-			position:absolute;
-			top:47px;
-			left:47px;	
-		}
-		.point-3{
-			position:absolute;
-			top:61px;
-			left:89px;
-		}
-		.point-4{
-			position:absolute;
-			top:52px;
-			left:127px;
-		}
-		.point-5{
-			position:absolute;
-			top:58px;
-			left:170px;
-		}
-		.point-6{
-			position:absolute;
-			top:70px;
-			left:208px;
-		}
-		.point-7{
-			position:absolute;
-			top:61px;
-			left:246px;
-		}
+	.blue-chart .point-2{
+		position:absolute;
+		top:47px;
+		left:47px;	
 	}
-}
+	.blue-chart .point-3{
+		position:absolute;
+		top:61px;
+		left:89px;
+	}
+	.blue-chart .point-4{
+		position:absolute;
+		top:52px;
+		left:127px;
+	}
+	.blue-chart .point-5{
+		position:absolute;
+		top:58px;
+		left:170px;
+	}
+	.blue-chart .point-6{
+		position:absolute;
+		top:70px;
+		left:208px;
+	}
+	.blue-chart .point-7{
+		position:absolute;
+		top:61px;
+		left:246px;
+	}
+
 .day{
 	font-size:10px;
 	position:absolute;
