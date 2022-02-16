@@ -1,0 +1,12 @@
+<HTML+CSS+Javascript 웹 프로그래밍>
+
+semantic : 의미가 있는
+semantic tag : 의미가 있는(의미를 표현하는) 태크
+
+-div나 span으로만 웹페이지를 구성하는 것보단 semantic tag를 활용하는 것이 더 좋다.
+왜? 정보탐색 과정에 있어 탐색을 좀 더 쉽게 해줌(검색했을 때 노출률 상승이랄까..?)
+
+-웹문서를 구조화하여 의미있는 내용탐색이 용이한 웹을 시맨틱 웹이라하고 이를 돕는 태크를 시맨틱 태그라한다.
+
+-시맨틱 태그
+>>header,section,footer,nav,aside,article
