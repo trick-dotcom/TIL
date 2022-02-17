@@ -37,3 +37,25 @@ summary는 details로 구성되는 블록의 제목을 표현함.
 >>submit btn(type="submit")
 >>reset btn(type="reset")
 >>image btn(type="image")
+4.선택형 입력
+>>checkbox (input 안에 selected라고 적으면 체크돼서 출력)
+짜장면 <input type="checkbox" value="1">
+짬뽕 <input type="checkbox" value="2">
+울면 <input type="checkbox" value="3">
+>>radio (checkbox가 뒤에 네모상자를 만드는 것이라면 라디오는 앞에 동그라미형태의 체크가능한 박스임 라디오 역시 selected라고 하면 체크돼서 출력됨)
+<input type="radio" name="china" value="1">
+        짜장면<br>
+        <input type="radio" name="china" value="2">
+        짬뽕<br>
+        <input type="radio" name="china" value="3">
+        울면<br>
+>>selct,option (콤보박스만들기, select는 콤보박스 전체를 표현하고 option은 태그항목 하나를 표현한다.)
+<select name="china">
+    <option value="1">짜장면</option>
+    <option value="2" >짬뽕</option>
+    <option value="3">울면</option>
+</select>
+
+😁😁😁datalist와 select 뭐가 다름?😁😁😁
+>>>datalist는 옵션리스트에서 선택하거나 입력창에 직접 입력가능!
+그러나 select의 경우 옵션리스트에서만 선택 가능!
