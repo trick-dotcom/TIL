@@ -1,0 +1,39 @@
+<HTML+CSS+Javascript 웹 프로그래밍>
+
+-시맨틱 블록 태그
+>> figure(그림을 블록화하는 시맨틱 태크) 
+: 책이나 보고서를 작성할 때 삽입하는 사진,차트 삽화,소스 코드 등을 다룰 때 사용.
+그림 제목은 figure태크내에 figcaption태크로 작성한다.
+>>details, summary
+:details는 상세한 정보를 담는 시맨틱 블록태그이다. 이를 사용하면 화살표 모양이 나오면서 정보를 감춰준다. 클릭하면 다시 열림!
+summary는 details로 구성되는 블록의 제목을 표현함.
+
+-시맨틱 인라인 태그
+>>mark
+:중요한 텍스트임을 표시
+>>time
+:시간 정보임을 표시
+>>meter
+:주어진 범위나 %의 데이터양 표시
+>>progress
+:작업의 진행정도 표시 
+
+-웹 폼
+>>폼은 로그인 등록 검색 예약 쇼핑 등의 다양한 웹서비스에서 사용자의 입력을 받기 위해 사용됨.
+
+1. 텍스트 입력
+>> <input type="text|password" value="초기에 출력되는 문자열">
+>> <textarea cols="20" rows="5">  =>20*5크기의 텍스트 창
+2. 데이터 목록을 가진 텍스트 입력 창 
+>> <datalist> =>목록 펼쳐서 고르기
+국적 : <input type="text" list="contries"><br>
+        <datalist id="contries">
+            <option value="대한민국"></option>
+            <option value="일본"></option>
+            <option value="중국"></option>
+        </datalist>
+3.텍스트/이미지 버튼 만들기
+>>단순버튼(type="button")
+>>submit btn(type="submit")
+>>reset btn(type="reset")
+>>image btn(type="image")

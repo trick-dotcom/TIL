@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>leftframe</title>
+    <title>figure태크 활용</title>
 </head>
 <body>
-    브랜치 연습이요~
-    <li><a href="https://www.melon.com/" target="right">melon</a></li>
-    <li><a href="https://www.genie.co.kr/" target="_self">genie</a></li>
-    <li><a href="https://www.spotify.com/kr-ko/" target="_top">spotify</a></li>
-    <li><a href="https://music.bugs.co.kr/" target="_blank">bugs music</a></li>
+    <h3>자기소개 작성</h3>
+    <hr>
+    <form>
+        이름 : <input type="text" value=""><br>
+        암호 : <input type="password" value="" maxlength="10"><br>
+        자소서 : <textarea colos="10" rows="5">
+            이곳에 자소서 작성
+        </textarea><br>
+        국적 : <input type="text" list="contries"><br>
+        <datalist id="contries">
+            <option value="대한민국"></option>
+            <option value="일본"></option>
+            <option value="중국"></option>
+        </datalist>
+    </form>
 </body>
 </html>
