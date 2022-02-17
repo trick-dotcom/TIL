@@ -59,3 +59,17 @@ summary는 details로 구성되는 블록의 제목을 표현함.
 😁😁😁datalist와 select 뭐가 다름?😁😁😁
 >>>datalist는 옵션리스트에서 선택하거나 입력창에 직접 입력가능!
 그러나 select의 경우 옵션리스트에서만 선택 가능!
+
+5. <label>로 폼 요소의 캡션 만들기
+>>(:의 좌측 부분을 캡션이라고 한다=>)USER ID : <input type="text">
+<label>
+<input type="radio" name="china" value="1">
+짜장면</label>
+형식으로 작성하면 이전의 라디오는 동그라미를 직접적으로 눌러야 클릭이 되었지만
+라벨로 감사주면 짜장면이라는 단어나 혹은 이미지가 첨부되었다면 이미지를 클릭해도 동그라미에 표시가된다.
+
+6.색입력
+>><input type="color">
+
+7.시간 정보 입력
+>> <input type="month|week|datetime-local|time|date">
