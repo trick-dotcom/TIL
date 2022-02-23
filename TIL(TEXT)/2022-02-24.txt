@@ -1,0 +1,41 @@
+<HTML+CSS+Javascript 웹 프로그래밍>
+
+1. 박스유형 제어 display
+-block
+-inline
+-inline-block
+
+2. 박스의 배치 position
+-static(default)
+-relative
+-absolute
+-fixed
+-float
+
+3. 수직으로 쌓기
+-z-index 
+: z-index값의 지정이 없을 경우 html문서상의 순서대로 값이 정해진다
+  z-index는 position 프로퍼티가 relative or absolute일때, 작동
+
+4. 내용 숨기기
+-visibility : hidden
+-visibility : hidden vs display:none
+>>>>visibility의 경우 태그의 공간은 할당되고 내용을 보이지 않게 하지만 display의 경우 태그조차 할당되지 않음!
+
+5. 내가 정해둔 범위를 컨텐츠가 넘어간다면?
+-overflow
+>visible : 범위 신경안쓰고 내용 넘겨버림
+>hidden : 범위 넘어가면 안보임 스크롤바없음
+>scroll : 스크롤바를 부착하여 컨텐츠 출력
+>auto : 컨텐츠가 정해진 범위의 height보다 넘치면 스크롤바 자동생성
+
+6.list꾸미기
+-list-style: 하면 마커의 타입 위치 이미지 등을 지정할 수 있음
+
+7.애니메이션
+-시간별 애니메이션 장면 생성
+>>>keyframes
+-전환
+>>>transition
+-변환
+>>>transform
